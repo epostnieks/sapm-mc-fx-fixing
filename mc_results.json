@@ -1,0 +1,84 @@
+{
+  "paper_id": "libor",
+  "config_file": "pipeline/mc_configs/libor.json",
+  "seed": 42,
+  "n_draws": 100000,
+  "n_channels": 6,
+  "correlation_rho": 0.3,
+  "private_payoff_B": 28.4,
+  "beta_w": {
+    "median": 7.26,
+    "mean": 7.32,
+    "std": 1.01,
+    "p1": 5.24,
+    "p5": 5.77,
+    "p95": 9.07,
+    "p99": 9.94,
+    "ci_90": [
+      5.77,
+      9.07
+    ],
+    "ci_99": [
+      5.24,
+      9.94
+    ],
+    "p_below_1": 0.0,
+    "p_below_1_pct": "0.0000%"
+  },
+  "welfare_cost": {
+    "total_median_B": 206.1,
+    "total_mean_B": 207.8,
+    "total_p5_B": 163.88,
+    "total_p95_B": 257.62
+  },
+  "pi_sa": {
+    "median_B": 177.7,
+    "mean_B": 179.4,
+    "p5_B": 135.48,
+    "p95_B": 229.22
+  },
+  "channel_statistics": {
+    "C1_direct_transfer": {
+      "median": 51.9,
+      "mean": 52.8,
+      "p5": 38.55,
+      "p95": 69.92,
+      "std": 9.6
+    },
+    "C2_hedging_inefficiency": {
+      "median": 44.0,
+      "mean": 44.8,
+      "p5": 32.23,
+      "p95": 60.14,
+      "std": 8.6
+    },
+    "C3_monetary_signal": {
+      "median": 38.0,
+      "mean": 39.0,
+      "p5": 26.26,
+      "p95": 54.97,
+      "std": 8.9
+    },
+    "C4_regulatory_deadweight": {
+      "median": 22.0,
+      "mean": 22.7,
+      "p5": 14.65,
+      "p95": 32.96,
+      "std": 5.7
+    },
+    "C5_litigation_transition": {
+      "median": 18.0,
+      "mean": 18.5,
+      "p5": 12.02,
+      "p95": 26.92,
+      "std": 4.6
+    },
+    "C6_trust_erosion": {
+      "median": 30.0,
+      "mean": 30.0,
+      "p5": 19.02,
+      "p95": 41.0,
+      "std": 6.7
+    }
+  }
+}
